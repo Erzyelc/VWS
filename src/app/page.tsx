@@ -9,33 +9,32 @@ import { List, ListItem } from '@/components/List'
 import { SectionIntro } from '@/components/SectionIntro'
 import { StylizedImage } from '@/components/StylizedImage'
 import { Testimonial } from '@/components/Testimonial'
-// import logoBrightPath from '@/images/clients/bright-path/logo-light.svg'
-// import logoFamilyFund from '@/images/clients/family-fund/logo-light.svg'
-// import logoGreenLife from '@/images/clients/green-life/logo-light.svg'
-// import logoHomeWork from '@/images/clients/home-work/logo-light.svg'
-// import logoMailSmirk from '@/images/clients/mail-smirk/logo-light.svg'
-// import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.svg'
-// import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
-// import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
-// import logoUnseal from '@/images/clients/unseal/logo-light.svg'
-import jc from '@/images/clients/jc.svg'
+import logoBrightPath from '@/images/clients/bright-path/logo-light.svg'
+import logoFamilyFund from '@/images/clients/family-fund/logo-light.svg'
+import logoGreenLife from '@/images/clients/green-life/logo-light.svg'
+import logoHomeWork from '@/images/clients/home-work/logo-light.svg'
+import logoMailSmirk from '@/images/clients/mail-smirk/logo-light.svg'
+import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.svg'
+import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
+import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
+import logoUnseal from '@/images/clients/unseal/logo-light.svg'
+import jc from '@/images/clients/jc-light.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 
 const clients = [
-  // ['Phobia', logoPhobiaLight],
-  // ['Family Fund', logoFamilyFund],
-  // ['Unseal', logoUnseal],
-  // ['Mail Smirk', logoMailSmirk],
-  // ['Home Work', logoHomeWork],
-  // ['Green Life', logoGreenLife],
-  // ['North Adventures', logoNorthAdventures],
-  ['JC Carpentry', jc],
+  ['Phobia', logoPhobiaLight],
+  ['Family Fund', logoFamilyFund],
+  ['Unseal', logoUnseal],
+  ['Mail Smirk', logoMailSmirk],
+  ['Home Work', logoHomeWork],
+  ['Green Life', logoGreenLife],
+  // ['JC Carpentry', jc],
 ]
 
 function Clients() {
   return (
-    <div className="mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
+    <div className="mx-10 mt-24 rounded-4xl bg-neutral-950 py-20 sm:mt-32 sm:py-32 lg:mt-56">
       <Container>
         <FadeIn className="flex items-center gap-x-8">
           <h2 className="text-center font-display text-sm font-semibold tracking-wider text-white sm:text-left">
@@ -51,13 +50,7 @@ function Clients() {
             {clients.map(([client, logo]) => (
               <li key={client}>
                 <FadeIn>
-                  <Image
-                    src={logo}
-                    alt={client}
-                    unoptimized
-                    height={80}
-                    width={80}
-                  />
+                  <Image src={logo} alt={client} unoptimized />
                 </FadeIn>
               </li>
             ))}
@@ -152,16 +145,15 @@ function Services() {
             </FadeIn>
           </div>
           <List className="mt-16 lg:mt-0 lg:w-1/2 lg:min-w-[33rem] lg:pl-4">
-            <ListItem title="Web development">
+            <ListItem title="Web development + Design">
               We specialise in crafting beautiful, high quality pages. The rest
               of the website will be a shell that uses lorem ipsum everywhere.
             </ListItem>
-            <ListItem title="Web Design">
-              We can help you design a website that is both beautiful and
-              functional. We have a team of designers who can help you create a
-              website that will stand out from the competition.
+            <ListItem title="Shopify Development">
+              We can help you build a custom Shopify store that will help you
+              sell more products and grow your business.
             </ListItem>
-            <ListItem title="SEO">
+            <ListItem title="SEO + Branding">
               We can help you get to the top of the search results. We have a
               team of experts who can help you with your SEO strategy.
             </ListItem>
