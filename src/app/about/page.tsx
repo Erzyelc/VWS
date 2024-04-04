@@ -20,6 +20,7 @@ import { StatList, StatListItem } from '@/components/StatList'
 // import imageKathrynMurphy from '@/images/team/kathryn-murphy.jpg'
 // import imageLeonardKrasner from '@/images/team/leonard-krasner.jpg'
 import imageLeslieAlexander from '@/images/team/leslie-alexander.jpg'
+import imageRyan from '@/images/team/ryan.jpg'
 // import imageMichaelFoster from '@/images/team/michael-foster.jpg'
 // import imageWhitneyFrancis from '@/images/team/whitney-francis.jpg'
 import { loadArticles } from '@/lib/mdx'
@@ -62,8 +63,8 @@ const team = [
     people: [
       {
         name: 'Ryan Carpenter',
-        role: 'CEO',
-        image: { src: imageLeslieAlexander },
+        role: 'Founder',
+        image: { src: imageRyan },
       },
     ],
   },
