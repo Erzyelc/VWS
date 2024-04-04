@@ -18,7 +18,8 @@ import logoNorthAdventures from '@/images/clients/north-adventures/logo-light.sv
 import logoPhobiaDark from '@/images/clients/phobia/logo-dark.svg'
 import logoPhobiaLight from '@/images/clients/phobia/logo-light.svg'
 import logoUnseal from '@/images/clients/unseal/logo-light.svg'
-import jc from '@/images/clients/jc-light.svg'
+import jcLight from '@/images/clients/jc-light.svg'
+import jc from '@/images/clients/jc.svg'
 import imageLaptop from '@/images/laptop.jpg'
 import { type CaseStudy, type MDXEntry, loadCaseStudies } from '@/lib/mdx'
 
@@ -197,7 +198,7 @@ export default async function Home() {
 
       <Testimonial
         className="mt-24 sm:mt-32 lg:mt-40"
-        client={{ name: '', logo: jc }}
+        client={{ name: 'Jc-Carpentry', logo: jc }}
       >
         VWS has been a game changer for our business. They have helped us build
         a website that is both beautiful and functional. We couldn’t be happier
