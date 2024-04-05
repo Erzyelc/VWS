@@ -30,7 +30,7 @@ const clients = [
   ['Mail Smirk', logoMailSmirk],
   ['Home Work', logoHomeWork],
   ['Green Life', logoGreenLife],
-  // ['JC Carpentry', jc],
+  ['JC Carpentry', jcLight],
 ]
 
 function Clients() {
@@ -51,7 +51,13 @@ function Clients() {
             {clients.map(([client, logo]) => (
               <li key={client}>
                 <FadeIn>
-                  <Image src={logo} alt={client} unoptimized />
+                  <Image
+                    src={logo}
+                    alt={client}
+                    unoptimized
+                    height={200}
+                    width={200}
+                  />
                 </FadeIn>
               </li>
             ))}
